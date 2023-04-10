@@ -2,7 +2,7 @@
 Understanding r-square and adjusted r-square and how they help in feature selection. Using Diabetes dataset from sklearn.
 
 
-1. R2 is a statistical measure that indicates how well a regression model fits the data. It is calculated as the proportion of the variance in the dependent variable that is explained by the independent variables in the model. The formula for calculating R2 is:
+**1. R2** is a statistical measure that indicates how well a regression model fits the data. It is calculated as the proportion of the variance in the dependent variable that is explained by the independent variables in the model. The formula for calculating R2 is:
 
 R2 = 1 - (SSres / SStot)
 
@@ -14,9 +14,9 @@ R2 is then calculated by subtracting the ratio of SSres and SStot from 1. R2 ran
 
 In summary, R2 is calculated as the proportion of the variance in the dependent variable that is explained by the independent variables in the regression model.
 
-Adjusted R2 is a modified version of R2 that adjusts for the number of predictors or independent variables used in the regression model. The formula for adjusted R2 is:
+**2. Adjusted R2** is a modified version of R2 that adjusts for the number of predictors or independent variables used in the regression model. The formula for adjusted R2 is:
 
-2. Adjusted R2 = 1 - [(1-R2)*(n-1)/(n-k-1)]
+Adjusted R2 = 1 - [(1-R2)*(n-1)/(n-k-1)]
 
 where:
 
@@ -28,7 +28,7 @@ Adjusted R2 penalizes the inclusion of unnecessary variables in the model by adj
 In summary, adjusted R2 is calculated using a formula that adjusts the R2 value based on the number of predictors or independent variables used in the regression model. The adjustment factor in the formula penalizes the inclusion of unnecessary variables in the model, resulting in a more accurate measure of the model's fit to the data.
 
 
-R2 and adjusted R2 are both measures of how well a model fits a set of data. However, there is an important difference between the two that relates to the number of variables or predictors in the model.
+**R2 and adjusted R2** are both measures of how well a model fits a set of data. However, there is an important difference between the two that relates to the number of variables or predictors in the model.
 
 R2 is a measure of the proportion of variation in the dependent variable (the variable being predicted) that is explained by the independent variables (the variables used to make the prediction). It ranges from 0 to 1, where 1 represents a perfect fit. However, R2 can be misleading when the model includes more variables. As the number of variables in the model increases, R2 increases, regardless of whether the added variables improve the model's accuracy. This is because R2 always increases when more variables are added, even if the added variables have little or no predictive power.
 
